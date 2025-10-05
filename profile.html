@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile - DidDevDo</title>
+<link rel="stylesheet" href="styles.css">
+<script type="module" src="scripts.js"></script>
+</head>
+<body>
+<nav>
+<div class="logo">DidDevDo</div>
+<div>
+<a href="videos.html">Videos</a>
+<a href="#" onclick="logOut()">Log Out</a>
+</div>
+</nav>
+<div class="container">
+<h1>Your Profile</h1>
+<div style="margin-top:1rem; font-size:1.2rem;">Email: <span id="userEmail"></span></div>
+<div style="margin-top:2rem;">
+<h2>Your Uploads</h2>
+<div id="videoContainer"></div>
+</div>
+</div>
+<script>loadVideos();</script>
+</body>
+</html>

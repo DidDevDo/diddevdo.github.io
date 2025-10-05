@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #1f1f1f;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff4c4c;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ff4c4c;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg,#ff4c4c,#ff9900);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    background-color: #1f1f1f;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.hero a:hover {
+    background-color: #fff;
+    color: #ff4c4c;
+}
+
+input, button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 25px;
+    border: 1px solid #555;
+    background-color: #1f1f1f;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+input:focus {
+    border: 1px solid #ff4c4c;
+    outline: none;
+    box-shadow: 0 0 10px #ff4c4c50;
+}
+
+button {
+    background-color: #ff4c4c;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff6f6f;
+}
+
+#videoContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 1.5rem;
+}
+
+.video-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.video-card:hover {
+    transform: scale(1.05);
+}
+
+.video-card video {
+    width: 100%;
+    display: block;
+}
+
+.video-card h3 {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Card style for inputs/forms */
+.form-card {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
